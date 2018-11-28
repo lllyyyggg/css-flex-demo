@@ -1,5 +1,7 @@
 # `CSS3 Flex 布局`
 
+> [文章来自 阮一峰](https://www.cnblogs.com/sxz2008/p/6635196.html)
+
 ### `Flex布局是什么？`
 
 
