@@ -1,32 +1,120 @@
-.App {
-  text-align: center;
+#box1 {
+  width: 20%;
+  height: 20px;
+  background-color: red;
+}
+#box2 {
+  width: 20%;
+  height: 20px;
+  background-color: green;
+}
+#box3 {
+  width: 20%;
+  height: 20px;
+  background-color: blue;
+}
+#box4 {
+  width: 20%;
+  height: 20px;
+  background-color: yellow;
+}
+#box5 {
+  width: 100%;
+  height: 20px;
+  background-color: orange;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#p-box {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+}
+/* -------- */
+
+#p-box-2 {
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+#box6 {
+  width: 20%;
+  height: 70px;
+  background-color: blue;
+}
+#box7 {
+  width: 20%;
+  height: 160px;
+  background-color: green;
+}
+#box8 {
+  width: 20%;
+  height: 20px;
+  background-color: yellow;
+  order: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#box9 {
+  width: 20%;
+  height: 20px;
+  background-color: green;
+  order: 2;
 }
+#box10 {
+  width: 20%;
+  height: 20px;
+  background-color: black;
+}
+/* ------ */
+
+#p-box-3{
+  display: flex;
+}
+#box11{
+  flex-grow: 1;
+  height: 20px;
+  background-color: yellow;
+}
+#box12 {
+  flex-grow: 3;
+  height: 20px;
+  background-color: green;
+}
+#box13 {
+  flex-grow: 3;
+  height: 20px;
+  background-color: black;
+}
+
+/* ------ */
+
+#p-box-4 {
+  display: flex;
+  flex-wrap: wrap;
+}
+#box14{
+ 
+  height: 20px;
+  flex-shrink: 1;
+  background-color: yellow;
+}
+#box15 {
+ 
+  height: 20px;
+  flex-shrink: 1;
+  background-color: green;
+}
+#box16 {
+
+  height: 20px;
+  flex-shrink: 0;
+  background-color: black;
+}
+#box17 {
+  width: 33%;
+  height: 20px;
+  
+  background-color: black;
+}
+
