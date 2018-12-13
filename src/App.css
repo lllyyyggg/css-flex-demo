@@ -122,3 +122,86 @@
   background-color: black;
 }
 
+
+
+/*--------*/
+
+#root {
+  padding-top: 50px;
+}
+.parent {
+
+  line-height: 50px;
+  flex-direction: row;
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.left {
+  height: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  width: 49.5%;
+  display: inline-block;
+  border: 1px solid #cccccc;
+}
+
+.right {
+  height: 100%;
+  text-align: center;
+  width: 49.5%;
+  display: inline-block;
+  border: 1px solid #0086ff;
+}
+
+.head-shadow {
+  height: 50px;
+  width: 100%;
+  /*float: left;*/
+  background-color: #0086ff;
+  color: white;
+  /*display: flex;*/
+  /*justify-content: center;*/
+  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*position: fixed;*/
+}
+
+.head-text {
+  height: 30px;
+
+  line-height: 30px;
+  text-align: center;
+  /*display: inline-block;*/
+  /*border-left: 5px solid #ffffff;*/
+  flex-grow: 90;
+  justify-content: center;
+  position: relative;
+
+}
+.white-space {
+  height: 30px;
+  flex-grow: 1;
+  background-color: #ffffff;
+  display: inline-block;
+}
+.space-left {
+  position: relative;
+  left: -4px;
+}
+.space-right {
+  position: relative;
+  left: 4px;
+  border-radius: 2px;
+}
+.border-down {
+  border-bottom: 1px solid #cccccc;
+}
+.shadow-parent {
+  position: fixed;
+  top: 0px;
+  right: 25px;
+  left: 50%;
+}
