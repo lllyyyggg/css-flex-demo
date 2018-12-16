@@ -278,3 +278,24 @@ align-self属性允许单个项目有与其他项目不一样的对齐方式，�
 该属性可能取6个值，除了auto，其他都与align-items属性完全一致。
 
 
+如何自定义滚动条?
+
+```
+#table2 tbody::-webkit-scrollbar {
+    width: 1px; /*纵向滚动条宽度*/
+    height: 0px; /*横向滚动条宽度*/
+    /*display: none;*/
+}
+
+#table2 tbody::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+#table2 tbody::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+```

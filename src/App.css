@@ -1,207 +1,52 @@
-#box1 {
-  width: 22%;
-  height: 20px;
-  background-color: red;
-}
-#box2 {
-  width: 22%;
-  height: 20px;
-  background-color: green;
-}
-#box3 {
-  width: 22%;
-  height: 20px;
-  background-color: blue;
-}
-#box4 {
-  width: 22%;
-  height: 20px;
-  background-color: yellow;
-}
-#box5 {
-  width: 22%;
-  height: 20px;
-  background-color: orange;
+#table2 {
+    width: 100%;
+    border-collapse: collapse;
+    word-break: break-word;
+    border: 1px solid #e4e4e4;
 }
 
-#p-box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around;
-  height: 600px;
-  padding: 0px 20px 0px 20px;
-}
-/* -------- */
-
-#p-box-2 {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  height: 300px;
+#table2 thead {
+    background-color: #0086ff;
+    color: white;
 }
 
-#box6 {
-  width: 20%;
-  height: 70px;
-  background-color: blue;
-}
-#box7 {
-  width: 20%;
-  height: 160px;
-  background-color: green;
-}
-#box8 {
-  width: 20%;
-  height: 20px;
-  background-color: yellow;
-  order: 1;
+#table2 thead tr, #table2 tbody tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
 
-#box9 {
-  width: 20%;
-  height: 20px;
-  background-color: green;
-  order: 2;
-}
-#box10 {
-  width: 20%;
-  height: 20px;
-  background-color: black;
-}
-/* ------ */
-
-#p-box-3{
-  display: flex;
-}
-#box11{
-  flex-grow: 1;
-  height: 20px;
-  background-color: yellow;
-}
-#box12 {
-  flex-grow: 3;
-  height: 20px;
-  background-color: green;
-}
-#box13 {
-  flex-grow: 3;
-  height: 20px;
-  background-color: black;
+#table2 tr th, #table2 tr td {
+    border-bottom: 1px solid #e4e4e4;
+    /*border-left: 1px solid #e4e4e4;*/
+    border-right: 1px solid #e4e4e4;
 }
 
-/* ------ */
+#table2 tbody {
+    display: block;
+    height: 100px;
+    overflow: auto;
+}
 
-#p-box-4 {
-  display: flex;
-  flex-wrap: wrap;
+#table2 tbody::-webkit-scrollbar {
+    width: 1px; /*纵向滚动条宽度*/
+    height: 0px; /*横向滚动条宽度*/
+    /*display: none;*/
 }
-#box14{
- 
-  height: 20px;
-  flex-shrink: 1;
-  background-color: yellow;
-}
-#box15 {
- 
-  height: 20px;
-  flex-shrink: 1;
-  background-color: green;
-}
-#box16 {
 
-  height: 20px;
-  flex-shrink: 0;
-  background-color: black;
+#table2 tbody::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
 }
-#box17 {
-  width: 33%;
-  height: 20px;
-  
-  background-color: black;
+
+#table2 tbody::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #EDEDED;
 }
 
 
-
-/*--------*/
-
-#root {
-  padding-top: 50px;
-}
-.parent {
-
-  line-height: 50px;
-  flex-direction: row;
-  max-height: 400px;
-  overflow: scroll;
-}
-
-.left {
-  height: 100%;
-  text-align: center;
-  background-color: #ffffff;
-  width: 49.5%;
-  display: inline-block;
-  border: 1px solid #cccccc;
-}
-
-.right {
-  height: 100%;
-  text-align: center;
-  width: 49.5%;
-  display: inline-block;
-  border: 1px solid #0086ff;
-}
-
-.head-shadow {
-  height: 50px;
-  width: 100%;
-  /*float: left;*/
-  background-color: #0086ff;
-  color: white;
-  /*display: flex;*/
-  /*justify-content: center;*/
-  line-height: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*position: fixed;*/
-}
-
-.head-text {
-  height: 30px;
-
-  line-height: 30px;
-  text-align: center;
-  /*display: inline-block;*/
-  /*border-left: 5px solid #ffffff;*/
-  flex-grow: 90;
-  justify-content: center;
-  position: relative;
-
-}
-.white-space {
-  height: 30px;
-  flex-grow: 1;
-  background-color: #ffffff;
-  display: inline-block;
-}
-.space-left {
-  position: relative;
-  left: -4px;
-}
-.space-right {
-  position: relative;
-  left: 4px;
-  border-radius: 2px;
-}
-.border-down {
-  border-bottom: 1px solid #cccccc;
-}
-.shadow-parent {
-  position: fixed;
-  top: 0px;
-  right: 25px;
-  left: 50%;
+#table2 tbody tr:nth-child(4) td {
+    border-bottom: none;
 }
