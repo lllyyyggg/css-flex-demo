@@ -3,6 +3,8 @@
     border-collapse: collapse;
     word-break: break-word;
     border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 #table2 thead {
@@ -13,12 +15,17 @@
 #table2 thead tr, #table2 tbody tr {
     display: table;
     table-layout: fixed;
-    width: 100%;
+    width: calc(100% - 1px);
 }
 
-#table2 tr th, #table2 tr td {
+#table2 tr th  {
+    border-bottom: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+#table2 tr td {
     border-bottom: 1px solid #e4e4e4;
-    /*border-left: 1px solid #e4e4e4;*/
+    border-left: 1px solid #e4e4e4;
     border-right: 1px solid #e4e4e4;
 }
 
@@ -29,9 +36,9 @@
 }
 
 #table2 tbody::-webkit-scrollbar {
-    width: 1px; /*纵向滚动条宽度*/
-    height: 0px; /*横向滚动条宽度*/
-    /*display: none;*/
+    /*width: 1px; !*纵向滚动条宽度*!*/
+    /*height: 0px; !*横向滚动条宽度*!*/
+    display: none;
 }
 
 #table2 tbody::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
@@ -46,7 +53,6 @@
     background: #EDEDED;
 }
 
-
-#table2 tbody tr:nth-child(4) td {
+#table2 tbody tr:last-child td {
     border-bottom: none;
 }
